@@ -1,0 +1,21 @@
+.lists {
+    list-style-type: none;
+    margin-top: 2rem;
+
+    li {
+        margin-bottom: 1.5rem;
+    }
+
+    &__list-title {
+        color: #00beef;
+        font-size: 1.8rem;
+
+        @mixin atSmall2 {
+            font-size: 1.17em;
+        }
+    }
+
+    &__list-subtitle {
+        color: #00beef;
+    }
+}

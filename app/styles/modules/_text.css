@@ -1,0 +1,51 @@
+.text {
+    grid-column: 2 / 3;
+    font-size: 1.6rem;
+    letter-spacing: 0.6px;
+    column-width: 25rem;
+    text-align: justify;
+
+    @mixin atSmall2 {
+        font-size: 1.8rem;
+    }
+
+    &__first-paragraph {
+
+        &::first-letter {
+            font-size: 6rem;
+            color: orangered;
+            float: left;
+            margin-right: .5rem;
+        }
+    }
+
+    &__quote {
+        color: #00beef;
+        font-size: 1.8rem;
+        text-align: center;
+        font-family: Raleway, sans-serif;
+
+        @mixin atSmall2 {
+            font-size: 2.4rem
+        }
+
+        &::before {
+            content:'" ';
+        }
+
+        &::after {
+            content:' "';
+        }
+    }
+
+    &__with-images {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 3rem;
+        margin-bottom: 3rem;
+
+        @mixin atSmall4 {
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+}

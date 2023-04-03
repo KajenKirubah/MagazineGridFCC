@@ -1,0 +1,16 @@
+.author {
+    font-size: 1.8rem;
+    font-family: Raleway, sans-serif;
+
+    @mixin atSmall2 {
+        font-size: 2rem;
+    }
+
+    &__name > a:hover {
+        background-color: #306203;
+    }
+
+    &__publish-date {
+        color: rgba(255, 255, 255, 0.5);
+    }
+}

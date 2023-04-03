@@ -1,0 +1,10 @@
+@import './base/_mixins';
+@import '../styles/base/_global';
+@import './modules/_main';
+@import './modules/_heading';
+@import './modules/_hero';
+@import './modules/_text';
+@import './modules/_author';
+@import './modules/_social-icons';
+@import './modules/_lists';
+@import './modules/_image';
